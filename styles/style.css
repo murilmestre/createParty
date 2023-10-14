@@ -72,6 +72,9 @@ ul{
 ul li.item-menu{
     transition: .2s;
 }
+i{
+    color: red;
+}
 
 ul li.item-menu:hover{
     background-color: orangered;
