@@ -1,0 +1,95 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+    /* essa trecho de codigo faz um "reset" na pagina
+ e adiciona o tipo de fonte "geral" que sera usada.*/
+} 
+
+body{
+   
+    height: 900vh;
+    color: white;
+    background-color: black;
+
+   /* esse trecho trata o corpo da pagina*/
+  
+}
+ul.menu-superior{
+    color:white;
+    text-decoration: none;
+    background-color: rgb(215, 104, 13);
+    display: flex;
+    justify-content:space-around;
+    list-style-type: none;
+    border-left: 1px solid;
+    align-items: center;
+    padding: 16px;
+    font-family:Arial;
+}
+a {
+    color:white;
+    text-decoration: none;
+}
+
+nav.menu-lateral{
+    width: 80px;
+    height: 100%;
+    background-color: #202020;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0 0 orangered;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow:hidden;
+    transition: .2s;
+
+ /* esse trecho trata o corpo do menu lateral*/
+}
+nav.menu-lateral:hover{
+    width: 195px;
+
+
+}
+div.btn-expandir{
+    width: 100%;
+    padding-left: 10px;
+    /* estiliza a div onde estao localizados os itens do menu lateral.*/
+}
+div.btn-expandir>i{
+    color: white;
+    font-size: 26px;
+    cursor: pointer;
+    /* estiliza o botao expandir.*/
+}
+ul{
+    height: 100%;
+    list-style-type:none ;
+}
+ul li.item-menu{
+    transition: .2s;
+}
+
+ul li.item-menu:hover{
+    background-color: orangered;
+}
+
+
+ul li.item-menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+ul li.item-menu a .txt-link{
+    margin-left: 40px;
+}
+ul li.item-menu a .icon > i{
+    font-size: 30px;
+}
